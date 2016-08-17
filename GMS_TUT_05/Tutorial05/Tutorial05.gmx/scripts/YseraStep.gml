@@ -73,10 +73,12 @@ if(sprite_index == spr_ysera_attack_side
         {
         case PlayerDirection.UP:
           magicBullet.m_speedY = -10;
+          magicBullet.image_angle = 270;
           deltaY = -89;
           break;
         case PlayerDirection.DOWN:
           magicBullet.m_speedY = 10;
+          magicBullet.image_angle = 90;
           deltaY = 7;
           break;
         case PlayerDirection.LEFT:
@@ -86,6 +88,7 @@ if(sprite_index == spr_ysera_attack_side
           break;
         case PlayerDirection.RIGHT:
           magicBullet.m_speedX = 10;
+          magicBullet.image_angle = 180;
           deltaX = 65;
           deltaY = -33;
           break;
